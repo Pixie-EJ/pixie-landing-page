@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,18 +11,46 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+    <script defer src="/public/js/all.min.js"></script>
+    <script defer src="/scripts/scripts.js"></script>
+
     <!-- STYLES -->
     <link rel="stylesheet" href="./styles.css" />
+    <link href="/public/css/all.min.css" rel="stylesheet">
 
 </head>
+
 <body>
+    <!-- NAVBAR -->
+    <header id="header" class="topbar">
+        <div class='d-flex justify-content-between'>
+            <div>
+                <img src='/public/logo.svg' class="logo" alt="logo" />
+            </div>
+
+            <div class="d-block d-md-none">
+                <a href="javascript:void(0);" class="colapseBar" onclick="responsiveNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            <div class="itemsMenu responsiveItems">
+                <a>INÍCIO</a>
+                <a>SOBRE NÓS</a>
+                <a>SERVIÇOS</a>
+                <a>CONTATO</a>
+            </div>
+
+            <div class="icons">
+                <i class="fab fa-linkedin icons"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </header>
+
     <div class="container-fluid">
         <div class="container">
-
-            <!-- NAVBAR -->
-            <div>
-                
-            </div>
 
             <!-- MAINFRAME -->
             <div>
@@ -47,8 +76,9 @@
             <div>
 
             </div>
-            
+
         </div>
     </div>
 </body>
+
 </html>
