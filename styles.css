@@ -20,6 +20,10 @@ body{
     color: var(--white);
 }
 
+.color-secondary-default{
+    color: var(--secondary-default);
+}
+
 /* FONTS */
 .regular-16 {
     font-weight: 400;
@@ -55,6 +59,10 @@ body{
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
+}
+
+.text-justify{
+    text-align: justify;
 }
 
 :root {
@@ -233,4 +241,14 @@ header .colapseBar{
         padding-left: 32px;
         padding-right: 32px;
     }
+}
+
+
+/* ABOUT US */
+
+.background-about {
+    background-image: url("./public/About.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
 }
