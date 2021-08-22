@@ -67,6 +67,12 @@ header{
 header .logo{
     cursor: pointer;
 }
+.about {
+    background-color: #18181B;
+    width: 100%;
+    height: 100%;
+}
+
 
 header .itemsMenu{
     color: white;
@@ -84,9 +90,9 @@ header .itemsMenu a:active{
     padding-bottom: 40px;
 }
 
-header .itemsMenu a:hover{
-    /* border-bottom: solid 1px white; */
-}
+ /* header .itemsMenu a:hover{
+    border-bottom: solid 1px white;
+}  */
 
 header .itemsMenu a:last-child{
     margin-right: 0px;
@@ -110,10 +116,6 @@ header .icons *:last-child{
 header .colapseBar{
     font-size: 25px;
     color: var(--secondary-default);
-}
-
-header .responsive{
-
 }
 
 @media (max-width: 576px) { 
