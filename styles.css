@@ -113,3 +113,72 @@ header .responsive{
         padding: 34px 34px;
     }
 }
+
+.mainframe{
+    position: relative;
+    width: 100vw;
+    height: 686px;
+    left: 0px;
+    top: 0px;
+    background: url("./public/mainframe.svg");
+}
+
+.mainframe-mask{
+    position: relative;
+    width: 100vw;
+    height: 686px;
+    left: 0px;
+    top: 0px;
+
+/* Gray Scale/gray-100 */
+
+background: #18181B;
+opacity: 0.85;
+}
+
+.mainframe-title{
+    text-align: center;
+    position: absolute;
+    width: 872px;
+    height: 68px;
+    left: 283px;
+    top: 310px; 
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 68px;
+    color: #FFFFFF;
+}
+
+.mainframe-subtitle{
+    text-align: center;
+    position: absolute;
+    width: 825px;
+    height: 27px;
+    left: 307px;
+    top: 390px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.mainframe-button{
+    position: absolute;
+    width: 282px;
+    height: 80px;
+    left: 579px;
+    top: 457px;
+    border-radius: 40px;
+    background-color: #45AB6B;
+    color: #FFFFFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    border-width: 0px;
+}
