@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page Pixie</title>
 
     <!-- SCRIPTS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
 
     <script defer src="/public/js/all.min.js"></script>
     <script defer src="/scripts/scripts.js"></script>
@@ -25,7 +28,7 @@
     <header id="header" class="topbar">
         <div class='d-flex justify-content-between'>
             <div>
-                <img src='/public/logo.svg' class="logo" alt="logo" />
+                <img src='./public/logo.svg' class="logo" alt="logo" />
             </div>
 
             <div class="d-block d-md-none">
@@ -49,8 +52,8 @@
         </div>
     </header>
 
-    <div class="container-fluid">
-        <div class="container">
+
+        <div class="main-container">
 
             <!-- MAINFRAME -->
             <div class="mainframe">
@@ -67,9 +70,27 @@
                 </button>
             </div>
 
-            <!-- BENEFÍCIOS -->
-            <div>
-
+            <!-- VALORES -->
+            <div class="section-valores">
+                <div class="container">
+                    <div class="container-valores row">
+                        <div class="col-12 col-md-3 card-valores">
+                            <img src="./public/flexibilidade.svg" alt="icon-flexibilidade" class="color-white"/>
+                            <p class="color-white medium-18 title-valores">Flexibilidade</p>
+                            <p class="color-gray-500 regular-16">Propomos soluções flexíveis e únicas para cada um de nossos clientes.</p>
+                        </div>
+                        <div class="col-12 col-md-3 card-valores">
+                            <img src="./public/autenticidade.svg" alt="icon-autenticidade" class="color-white"/>
+                            <p class="color-white medium-18 title-valores">Autenticidade</p>
+                            <p class="color-gray-500 regular-16">A autenticidade é um dos valores mais admirados pela pixie, seja único!</p>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <img src="./public/praticidade.svg" alt="icon-praticidade" class="color-white"/>
+                            <p class="color-white medium-18 title-valores">Praticidade</p>
+                            <p class="color-gray-500 regular-16">Procuramos sempre priorizar a eficiência e agilidade dentro da nossa empresa.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- SERVIÇOS -->
@@ -78,9 +99,13 @@
             </div>
 
             <!-- SOBRE A PIXIE -->
-            <div>
-
-            </div>
+            <div class="container-fluid about">
+                <div class="title"></div >
+                <div>asdfas
+                  <div class="text"></div >
+                  <div class="text"></div >
+                </div  >
+              </div >
 
             <!-- CONTATO -->
             <div>
@@ -88,7 +113,7 @@
             </div>
 
         </div>
-    </div>
+
 </body>
 
 </html>
