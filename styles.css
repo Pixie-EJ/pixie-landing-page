@@ -115,6 +115,10 @@ header .navbar{
     padding-bottom: 0rem;
 }
 
+header .navbar-nav .nav-item{
+    margin-right: clamp(15px, 2.8vw, 56px);
+}
+
 header .icons *{
     color:var(--secondary-default);
     font-size: 20px;
