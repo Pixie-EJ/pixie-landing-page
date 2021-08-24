@@ -116,7 +116,8 @@ header .navbar{
 }
 
 header .navbar-nav .nav-item{
-    margin-right: clamp(15px, 2.8vw, 56px);
+    margin-left: clamp(7px, 1.4vw, 28px);
+    margin-right: clamp(7px, 1.4vw, 28px);
 }
 
 header .icons *{
