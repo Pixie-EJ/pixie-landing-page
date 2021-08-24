@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page Pixie</title>
 
     <!-- SCRIPTS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 
     <script defer src="/public/js/all.min.js"></script>
     <script defer src="/scripts/scripts.js"></script>
@@ -25,99 +26,142 @@
 
 <body>
     <!-- NAVBAR -->
-    <header id="header" class="topbar">
-        <div class='d-flex justify-content-between'>
-            <div>
-                <img src='./public/logo.svg' class="logo" alt="logo" />
-            </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src='./public/logo.svg' class="logo img-fluid " alt="logo" /></a>
 
-            <div class="d-block d-md-none">
-                <a href="javascript:void(0);" class="colapseBar" onclick="responsiveNav()">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
-                </a>
-            </div>
+                </button>
 
-            <div class="itemsMenu responsiveItems">
-                <a>INÍCIO</a>
-                <a>SOBRE NÓS</a>
-                <a>SERVIÇOS</a>
-                <a>CONTATO</a>
-            </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">INÍCIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SOBRE NÓS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SERVIÇOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTATO</a>
+                        </li>
+                    </ul>
 
-            <div class="icons">
-                <i class="fab fa-linkedin icons"></i>
-                <i class="fab fa-github"></i>
-                <i class="fab fa-instagram"></i>
+                    <div class="icons">
+                        <i class="fab fa-linkedin icons"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 
-
-        <div class="main-container">
-
-            <!-- MAINFRAME -->
-            <div class="mainframe">
-                <div class="mainframe-mask">
-                    <div class="container h-100">
-                        <div class=" d-flex flex-column align-items-center justify-content-center w-100 h-100">
-                            <h1 class="display color-white">
-                                Conectamos você a sua solução
-                            </h1>
-                            <h3 class="mainframe-subtitle bigger-regular color-white">
-                                Somos uma empresa júnior de engenharia de software que desenvolve websites e sistemas web.
-                            </h3>
-                            <button class="mainframe-button bigger-medium">
-                                Entrar em contato
-                            </button>
-                        </div>
-                    </div>
+    <!-- MAINFRAME -->
+    <section class="mainframe">
+        <div class="mainframe-mask">
+            <div class="container h-100">
+                <div class=" d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                    <h1 class="display color-white">
+                        Conectamos você a sua solução
+                    </h1>
+                    <h2 class="mainframe-subtitle bigger-regular color-white">
+                        Somos uma empresa júnior de engenharia de software que desenvolve websites e sistemas web.
+                    </h2>
+                    <button class="mainframe-button bigger-medium">
+                        Entrar em contato
+                    </button>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- VALORES -->
-            <div class="section-valores">
-                <div class="container">
-                    <div class="container-valores row">
-                        <div class="col-12 col-md-3 card-valores">
-                            <img src="./public/flexibilidade.svg" alt="icon-flexibilidade" class="color-white"/>
-                            <p class="color-white medium-18 title-valores">Flexibilidade</p>
-                            <p class="color-gray-500 regular-16">Propomos soluções flexíveis e únicas para cada um de nossos clientes.</p>
-                        </div>
-                        <div class="col-12 col-md-3 card-valores">
-                            <img src="./public/autenticidade.svg" alt="icon-autenticidade" class="color-white"/>
-                            <p class="color-white medium-18 title-valores">Autenticidade</p>
-                            <p class="color-gray-500 regular-16">A autenticidade é um dos valores mais admirados pela pixie, seja único!</p>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <img src="./public/praticidade.svg" alt="icon-praticidade" class="color-white"/>
-                            <p class="color-white medium-18 title-valores">Praticidade</p>
-                            <p class="color-gray-500 regular-16">Procuramos sempre priorizar a eficiência e agilidade dentro da nossa empresa.</p>
-                        </div>
-                    </div>
+    <!-- VALORES -->
+    <section class="section-valores">
+        <div class="container">
+            <div class="container-valores row">
+                <div class="col-12 col-md-3 card-valores">
+                    <img src="./public/flexibilidade.svg" alt="icon-flexibilidade" class="color-white" />
+                    <p class="color-white medium-18 title-valores">Flexibilidade</p>
+                    <p class="color-gray-500 regular-16">Propomos soluções flexíveis e únicas para cada um de nossos
+                        clientes.</p>
+                </div>
+                <div class="col-12 col-md-3 card-valores">
+                    <img src="./public/autenticidade.svg" alt="icon-autenticidade" class="color-white" />
+                    <p class="color-white medium-18 title-valores">Autenticidade</p>
+                    <p class="color-gray-500 regular-16">A autenticidade é um dos valores mais admirados pela pixie,
+                        seja único!</p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <img src="./public/praticidade.svg" alt="icon-praticidade" class="color-white" />
+                    <p class="color-white medium-18 title-valores">Praticidade</p>
+                    <p class="color-gray-500 regular-16">Procuramos sempre priorizar a eficiência e agilidade dentro
+                        da nossa empresa.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- SERVIÇOS -->
-            <div>
-
+    <!-- SERVIÇOS -->
+    <section class="servicos">
+        <div class="container">
+            <div class="title d-block d-lg-flex">
+                <h3 class="me-auto">Conheça nossos serviços</h3>
+                <p class="align-self-center">
+                    <i class="fas fa-desktop"></i> Soluções digitais personalizadas para sua empresa.
+                </p>
             </div>
 
-            <!-- SOBRE A PIXIE -->
-            <div class="container-fluid about">
-                <div class="title"></div >
-                <div>asdfas
-                  <div class="text"></div >
-                  <div class="text"></div >
-                </div  >
-              </div >
+            <div class="d-block d-lg-flex">
+                <div class="col-lg-6 col-12 containerCard" id="landing">
+                    <div class="card">
+                        <img src="./public/landingPage.svg" alt="icon-landing-page" />
+                        <h4>Landing Page</h4>
 
-            <!-- CONTATO -->
-            <div>
+                        <p>
+                            Dê visibilidade para o seu negócio, instituição ou marca através de um website único e
+                            exclusivo. Utilizamos a nossa equipe de desenvolvimento para a criação de uma experiência
+                            única e agradável para seu possível cliente.
+                        </p>
+                        <a class="mt-auto">QUERO UMA LANDING PAGE <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
 
+                <div class="col-lg-6 col-12 containerCard" id="sistema">
+                    <div class="card">
+                        <img src="./public/sistemaWeb.svg" alt="icon-sistema" />
+                        <h4>Sistemas Web</h4>
+
+                        <p>
+                            Precisando de um sistema personalizado para a sua empresa? Oferecemos soluções inteligentes
+                            para automatizar e facilitar processos diários dentro da sua empresa.
+                        </p>
+                        <a class="mt-auto">QUERO UM SISTEMA WEB <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
 
         </div>
+    </section>
 
+    <!-- SOBRE A PIXIE -->
+    <section class="container about">
+        <h3 class="title">Sobre a Pixie</h3>
+        <div>asdfas
+            <div class="text"></div>
+            <div class="text"></div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section>
+
+    </section>
 </body>
 
 </html>
