@@ -112,6 +112,10 @@ body{
 
 /* HEADER */
 
+.p-100 {
+    padding-top: 100px;
+}
+
 header{
     height: 100px;
     padding: 34px 0px;
