@@ -16,8 +16,16 @@ body{
     color: var(--gray-500);
 }
 
+.color-gray-400 {
+    color: var(--gray-400);
+}
+
 .color-white {
     color: var(--white);
+}
+
+.color-secondary-default{
+    color: var(--secondary-default);
 }
 
 /* FONTS */
@@ -55,6 +63,10 @@ body{
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
+}
+
+.text-justify{
+    text-align: justify;
 }
 
 :root {
@@ -308,10 +320,12 @@ header .fa-bars{
         margin-bottom: 10px;
     }
  }
-/* SOBRE */
 
-.about {
-    background-color: #18181B;
-    width: 100%;
-    height: 100%;
+/* ABOUT US */
+
+.background-about {
+    background-image: url("./public/About.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 88px;
 }
