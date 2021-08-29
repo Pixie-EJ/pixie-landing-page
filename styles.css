@@ -333,3 +333,66 @@ header .fa-bars{
     background-size: contain;
     background-position-y: 88px;
 }
+
+/* FOOTER */
+
+.p-100 {
+    padding-top: 100px;
+}
+
+footer{
+    height: 118px;
+    padding: 34px 0px;
+    background-color: var(--gray-200) !important;
+}
+
+footer .bg-dark{
+    background-color: var(--gray-200) !important;
+}
+
+footer .navbar{
+    padding-top: 0rem;
+}
+
+footer .navbar-nav .nav-item{
+    margin-left: clamp(7px, 1.4vw, 28px);
+    margin-right: clamp(7px, 1.4vw, 28px);
+}
+
+footer .icons *{
+    color:var(--white);
+    font-size: 20px;
+    margin-right: 36px;
+    cursor: pointer;
+}
+
+footer .icons *:last-child{
+    margin-right: 0px;
+}
+
+footer .navbar-toggler{
+    border-color: transparent !important;
+}
+
+footer .fa-bars{
+    font-size: 25px;
+    color: var(--secondary-default);
+}
+
+.m--32{
+    margin-top: -26px;
+}
+
+@media (max-width: 991px) {
+    footer ul.navbar-nav{
+        margin-top: 20px;
+    }
+
+    footer ul.navbar-nav *:last-child{
+        margin-bottom: 20px;
+    }
+
+    footer .icons{
+        display: none;
+    }
+}
