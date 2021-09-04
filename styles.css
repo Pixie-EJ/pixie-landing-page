@@ -333,3 +333,27 @@ header .fa-bars{
     background-size: contain;
     background-position-y: 88px;
 }
+
+/* FOOTER */
+
+footer{
+    min-height: 118px;
+    padding: 34px 0px;
+    background-color: var(--gray-200) !important;
+}
+
+.footer-icons {
+    color:var(--white);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.m--26{
+    margin-top: -26px;
+}
+
+.footer-divider{
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray-300);
+}
