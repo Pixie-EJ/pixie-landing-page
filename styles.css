@@ -335,6 +335,7 @@ header .fa-bars{
 /* ABOUT US */
 
 .background-about {
+    height: 60vh;
     background-image: url("./public/About.png");
     background-repeat: no-repeat;
     background-size: contain;
