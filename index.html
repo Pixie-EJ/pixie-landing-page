@@ -1,52 +1,257 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page Pixie</title>
 
     <!-- SCRIPTS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+
+    <script defer src="/public/js/all.min.js"></script>
+    <script defer src="/scripts/scripts.js"></script>
 
     <!-- STYLES -->
     <link rel="stylesheet" href="./styles.css" />
-
+    <link href="/public/css/all.min.css" rel="stylesheet" />
 </head>
+
 <body>
-    <div class="container-fluid">
+    <!-- NAVBAR -->
+
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src='./public/logo.svg' class="logo img-fluid " alt="logo" /></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto align-items-center">
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link mx-auto" href="#">INÍCIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SOBRE NÓS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SERVIÇOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTATO</a>
+                        </li>
+                    </ul>
+
+                    <div class="icons">
+                        <i class="fab fa-linkedin icons"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAINFRAME -->
+    <section class="mainframe p-100">
+        <div class="mainframe-mask">
+            <div class="container h-100">
+                <div class=" d-flex flex-column align-items-center justify-content-center w-100 h-100">
+                    <h1 class="display color-white">
+                        Conectamos você a sua solução
+                    </h1>
+                    <h2 class="mainframe-subtitle bigger-regular color-white">
+                        Somos uma empresa júnior de engenharia de software que desenvolve websites e sistemas web.
+                    </h2>
+                    <button class="mainframe-button bigger-medium">
+                        Entrar em contato
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALORES -->
+    <section class="section-valores">
         <div class="container">
-            <!-- NAVBAR -->
-            <div>
-                
+            <div class="container-valores row">
+                <div class="col-12 col-md-3 card-valores">
+                    <img src="./public/flexibilidade.svg" alt="icon-flexibilidade" class="color-white" />
+                    <p class="color-white medium-18 title-valores">Flexibilidade</p>
+                    <p class="color-gray-500 regular-16">Propomos soluções flexíveis e únicas para cada um de nossos
+                        clientes.</p>
+                </div>
+                <div class="col-12 col-md-3 card-valores">
+                    <img src="./public/autenticidade.svg" alt="icon-autenticidade" class="color-white" />
+                    <p class="color-white medium-18 title-valores">Autenticidade</p>
+                    <p class="color-gray-500 regular-16">A autenticidade é um dos valores mais admirados pela pixie,
+                        seja único!</p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <img src="./public/praticidade.svg" alt="icon-praticidade" class="color-white" />
+                    <p class="color-white medium-18 title-valores">Praticidade</p>
+                    <p class="color-gray-500 regular-16">Procuramos sempre priorizar a eficiência e agilidade dentro
+                        da nossa empresa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="servicos">
+        <div class="container">
+            <div class="title d-block d-lg-flex">
+                <h3 class="me-auto">Conheça nossos serviços</h3>
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-desktop"></i> 
+                    <p class="medium-18">Soluções digitais personalizadas para sua empresa.</p>
+                </div>
             </div>
 
-            <!-- MAINFRAME -->
-            <div>
+            <div class="d-block d-lg-flex">
+                <div class="col-lg-6 col-12 containerCard" id="landing">
+                    <div class="card">
+                        <img src="./public/landingPage.svg" alt="icon-landing-page" />
+                        <h4>Landing Page</h4>
 
+                        <p>
+                            Dê visibilidade para o seu negócio, instituição ou marca através de um website único e
+                            exclusivo. Utilizamos a nossa equipe de desenvolvimento para a criação de uma experiência
+                            única e agradável para seu possível cliente.
+                        </p>
+                        <a class="mt-auto">QUERO UMA LANDING PAGE <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12 containerCard" id="sistema">
+                    <div class="card">
+                        <img src="./public/sistemaWeb.svg" alt="icon-sistema" />
+                        <h4>Sistemas Web</h4>
+
+                        <p>
+                            Precisando de um sistema personalizado para a sua empresa? Oferecemos soluções inteligentes
+                            para automatizar e facilitar processos diários dentro da sua empresa.
+                        </p>
+                        <a class="mt-auto">QUERO UM SISTEMA WEB <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <!-- BENEFÍCIOS -->
-            <div>
+    <!-- SOBRE A PIXIE -->
+    <div class="background-about mb-5 pb-5">
+        <div class="container py-5 color-white">
+            <h1 class="my-5">Sobre a Pixie</h1>
+            <div class="d-flex justify-content-around">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <p class="color-secondary-default">
+                            Aqui tudo é muito nosso, tudo do nosso jeito...
+                        </p>
+                        <p class="text-justify color-gray-400">
+                            Buscamos maneiras criativas em propor soluções para nossos
+                            clientes, priorizamos a criação de um produto de qualidade que
+                            atenda as expectativas de nossos clientes. Tivemos o nosso
+                            inicio em 2020 com o objetivo de entregar softwares de
+                            qualidade para nossos clientes, e em ser reconhecido como uma
+                            Empresa Junior de tecnologia aqui em Ponta Grossa.
+                        </p>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-12 col-md-5">
+                        <p class="color-secondary-default">
+                            O que significa ser um duende?
+                        </p>
+                        <p class="text-justify color-gray-400">
+                            Buscamos maneiras criativas em propor soluções para nossos
+                            clientes, priorizamos a criação de um produto de qualidade que
+                            atenda as expectativas de nossos clientes. Tivemos o nosso
+                            inicio em 2020 com o objetivo de entregar softwares de
+                            qualidade para nossos clientes, e em ser reconhecido como uma
+                            Empresa Junior de tecnologia aqui em Ponta Grossa.
+                        </p>
 
-            </div>
-
-            <!-- SERVIÇOS -->
-            <div>
-
-            </div>
-
-            <!-- SOBRE A PIXIE -->
-            <div>
-
-            </div>
-
-            <!-- CONTATO -->
-            <div>
-
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- CONTATO -->
+    <section class="contact">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <h1 class="contact-title title color-white">
+                    Fale com a gente
+                </h1>
+                <h3 class="contact-subtitle regular-16 color-white">
+                    Interessado nos nossos serviços? Entre em contato com a gente e bora conversar!
+                </h3>
+                <div class="contact-labels">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control contact-label" placeholder="Nome Completo" aria-label="Nome Completo" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control contact-label" placeholder="E-mail" aria-label="E-mail">
+                        <input type="text" class="form-control contact-label" placeholder="Telefone" aria-label="Telefone">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control contact-label" placeholder="Assunto" aria-label="Assunto" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group">
+                        <textarea class="form-control contact-label" placeholder="Mensagem" aria-label="Mensagem"></textarea>
+                    </div>
+                </div>  
+                <button class="contact-button bigger-medium">
+                    Enviar mensagem
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section>
+        <footer class="m-0 p-0">
+                <div class="container h-100">
+                    <div class="footer-divider"></div>
+                    <div class="row">
+                        <div class="col-12 col-md-3 mt-5">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a class="m--26" href="#"><img src='./public/logo-pixie.svg' class="logo img-fluid " alt="logo" /></a>
+                                <a class="mx-2" href="#"><img src='./public/logo.svg' class="logo img-fluid " alt="logo" /></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mt-5">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <p class="color-gray-400 m-0 p-0">
+                                    Pixie EJ. 2021. Todos os direitos reservados.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 my-5">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <i class="fab fa-linkedin footer-icons"></i>
+                                <i class="fab fa-github footer-icons mx-5"></i>
+                                <i class="fab fa-instagram footer-icons"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </section>
 </body>
+
 </html>

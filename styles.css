@@ -1,7 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--gray-100);
+}
+
+/* COLORS */
+.color-gray-500 {
+    color: var(--gray-500);
+}
+
+.color-gray-400 {
+    color: var(--gray-400);
+}
+
+.color-white {
+    color: var(--white);
+}
+
+.color-secondary-default{
+    color: var(--secondary-default);
+}
+
+/* FONTS */
+.regular-16 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.medium-18 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 140%;
+}
+
+.display{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 68px;
+    margin: 0;
+}
+
+.bigger-regular{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.bigger-medium{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.text-justify{
+    text-align: justify;
 }
 
 :root {
@@ -17,14 +89,313 @@
     --feedback-warning: #DAAA30;
     --feedback-success: #30DA74;
     --feedback-infos: #3069DA;
-    --gray-100: #0E0E22;
-    --gray-200: #5A5C61;
-    --gray-300: #8E9197;
+    --gray-100-o-85: #181818be;
+    --gray-100: #181818;
+    --gray-200: #212429;
+    --gray-300: #575A61;
     --gray-400: #DADCDF;
     --gray-500: #F4F5F8;
-    --white: #000000;
+    --white: #FFFFFF;
+
+    /* 1vw = 19,8px */
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--gray-100);
+}
+  
+::-webkit-scrollbar-thumb {
+    background: var(--primary-dark);
+    border-radius: 20px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
+/* HEADER */
 
+.p-100 {
+    padding-top: 100px;
+}
 
+header{
+    height: 100px;
+    padding: 34px 0px;
+    background-color: var(--gray-100) !important;
+}
+
+header .bg-dark{
+    background-color: var(--gray-100) !important;
+}
+
+header .navbar{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+header .navbar-nav .nav-item{
+    margin-left: clamp(7px, 1.4vw, 28px);
+    margin-right: clamp(7px, 1.4vw, 28px);
+}
+
+header .icons *{
+    color:var(--secondary-default);
+    font-size: 20px;
+    margin-right: 36px;
+    cursor: pointer;
+}
+
+header .icons *:last-child{
+    margin-right: 0px;
+}
+
+header .navbar-toggler{
+    border-color: transparent !important;
+}
+
+header .fa-bars{
+    font-size: 25px;
+    color: var(--secondary-default);
+}
+
+@media (max-width: 991px) { 
+    header ul.navbar-nav{
+        margin-top: 20px;
+    }
+
+    header ul.navbar-nav *:last-child{
+        margin-bottom: 20px;
+    }
+
+    header .icons{
+        display: none;
+    }
+ }
+
+/* MAINFRAME */
+
+.mainframe{
+    width: 100%;
+    height: 100vh;
+    background: url("./public/mainframe.svg");
+    background-size: cover;
+}
+
+.mainframe-mask{
+    width: 100%;
+    height: 100vh;
+    background: var(--gray-100-o-85);
+
+}
+
+.mainframe-subtitle{
+    margin-top: 12px;
+    margin-bottom: 40px;
+    
+}
+
+.mainframe-button{
+    width: 282px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: var(--secondary-default);
+    color: var(--white);
+    border-width: 0px;
+}
+
+@media(max-width: 576px){
+    .display{
+        font-size: 44px;
+    }
+}
+
+/* VALORES */
+
+.section-valores {
+    background-color: var(--gray-200);
+}
+
+.container-valores {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 72px;
+    padding-top: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-valores {
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+
+.card-valores {
+    margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+    .card-valores {
+        margin-bottom: 56px;
+    }
+    .container-valores {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+/* SERVIÇOS */
+
+.servicos{
+    min-height: 100vh;
+    padding-top: clamp(30px, 15vw ,160px);
+}
+
+.servicos .title{
+    margin-bottom: 56px;
+}
+
+.servicos .title h3{
+    color: var(--white);
+}
+
+.servicos .title p{
+    color: var(--gray-300);
+}
+
+.servicos .title .fa-desktop{
+    margin-right: 14px;
+}
+
+.servicos .containerCard#landing{
+    padding-right: 12px;
+}
+
+.servicos .containerCard#sistema{
+    padding-left: 12px;
+}
+
+.servicos .card{
+    padding: 62px 72px 74px;
+    background-color: var(--gray-200);
+    height: 100%;
+    border-radius: 16px;
+}
+
+.servicos .card h4{
+    color: var(--white);
+    margin-top: 28px;
+    margin-bottom: 32px;
+}
+
+.servicos .card img{
+    width: 84px;
+}
+
+.servicos .card p{
+    color: var(--gray-500);
+    margin-bottom: 26px;
+}
+
+.servicos .card a{
+    color: var(--secondary-default);
+    cursor: pointer;
+    transition: ease 0.5s;
+    text-decoration: none;
+}
+
+.servicos .card a:hover{
+    color: var(--secondary-dark);
+}
+
+.servicos .card i{
+    color: var(--secondary-default);
+}
+
+@media (max-width: 991px) { 
+    .servicos .containerCard#landing{
+        padding-right: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .servicos .containerCard#sistema{
+        padding-left: 0px;
+    }
+
+    .servicos .title h3{
+        margin-bottom: 10px;
+    }
+ }
+
+/* ABOUT US */
+
+.background-about {
+    height: 60vh;
+    background-image: url("./public/About.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 88px;
+}
+
+/* FOOTER */
+
+footer{
+    min-height: 118px;
+    padding: 34px 0px;
+    background-color: var(--gray-200) !important;
+}
+
+.footer-icons {
+    color:var(--white);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.m--26{
+    margin-top: -26px;
+}
+
+.footer-divider{
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray-300);
+}
+
+.contact{
+    background-color: var(--gray-200) ;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-title{
+    margin-top: 120px;
+}
+
+.contact-subtitle{
+    margin-top: 8px;
+}
+
+.contact-labels{
+    margin-top: 56px;
+}
+
+.contact-label{
+    background-color: var(--gray-200);
+    height: 72px;
+    border-radius: 8px;
+}
+
+.contact-button{
+    width: 282px;
+    height: 56px;
+    border-radius: 40px;
+    margin-top: 24px;
+    background-color: var(--secondary-default);
+    color: var(--white);
+    border-width: 0px;
+}
